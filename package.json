@@ -1,0 +1,36 @@
+{
+  "name": "sambo-brazil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "sambo-brazil",
+  "author": "Caio Furtado",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mui/material": "^5.8.1",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "dotenv": "^16.0.1",
+    "gatsby": "^4.15.0",
+    "gatsby-plugin-image": "^2.15.0",
+    "gatsby-plugin-manifest": "^4.15.0",
+    "gatsby-plugin-react-helmet": "^5.15.0",
+    "gatsby-plugin-sharp": "^4.15.0",
+    "gatsby-plugin-sitemap": "^5.15.0",
+    "gatsby-source-filesystem": "^4.15.0",
+    "gatsby-source-strapi": "^2.0.0",
+    "gatsby-transformer-remark": "^5.15.0",
+    "gatsby-transformer-sharp": "^4.15.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.5"
+  }
+}
