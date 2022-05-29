@@ -6,31 +6,19 @@ export default function Header() {
     <StaticQuery
       query={
         graphql`
-          {
-            allStrapiPage {
-              nodes {
-                id
-                publishedAt
-                slug: Slug
-                title: Titulo
-                body: Corpo {
-                  Titulo
-                  Texto {
-                    data {
-                      text: Texto
-                    }
-                  }
-                }
-              }
+        {
+          allSitePage {
+            nodes {
+              id
             }
           }
+        }
         `
       }
       render={data => {
         <div>
-          <h1>teste</h1>
           <h1>{console.log(data)}</h1>
-          <h1>{data.allStrapiPage.nodes[0].title}</h1>
+          <h1>{data.allSitePage.nodes[0].id}</h1>
         </div>
       }}
     />
