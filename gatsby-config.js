@@ -7,8 +7,6 @@ const strapiConfig = {
   singleTypes: ['footer', 'menu'],
 };
 
-console.log(strapiConfig);
-
 module.exports = {
   siteMetadata: {
     title: `Sambo Brazil`,
