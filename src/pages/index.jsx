@@ -4,17 +4,25 @@ import { Box, createTheme, CssBaseline, Divider, Grid, Hidden, Paper, responsive
 import { Container } from "@mui/system";
 import { makeStyles } from "@mui/styles";
 import { StaticImage } from "gatsby-plugin-image";
+import '@fontsource/roboto';
 
 let darkTheme = createTheme({
   palette: {
     primary: {
       main: '#090909',
-      contrastText: '#fff'
     },
     secondary: {
-      main: '#4587D4',
+      main: '#FFF',
     },
-    white: '#fff',
+    blue500: '#001C6F',
+    blue400: '#0B3B99',
+    blue300: '#2460D4',
+    blue200: '#4575D4',
+    blue100: '#7193D6',
+    red500: '#6F0000',
+    red400: '#990B0',
+    red300: '#D42424',
+    red200: '#D44D45'
   },
   typography: {
     fontFamily: [
@@ -69,8 +77,9 @@ const IndexPage = () => {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Header />
-      <div className={styles.overlay}></div>
-      <Paper 
+      <div className={styles.overlay}>
+      </div>
+      {/* <Paper 
         sx={{ backgroundColor: 'transparent' }}
         variant="outlined" 
         className={styles.section}>
@@ -95,9 +104,9 @@ const IndexPage = () => {
             </Grid>
           </Grid>
         </Container>
-      </Paper>
-      {/* <Container sx={{zIndex: 100, position: 'relative'}} >
-      </Container> */}
+      </Paper> */}
+      <Container sx={{zIndex: 100, position: 'relative'}} >
+      </Container>
     </ThemeProvider>
   )
 }
